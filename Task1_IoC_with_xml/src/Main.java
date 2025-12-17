@@ -9,7 +9,7 @@ public class Main {
         Circle circle = (Circle) context.getBean("circle");
         Square square = (Square) context.getBean("square");
 
-        System.out.println("The area of the circle = " + circle.getArea());
-        System.out.println("The area of the square = " + square.getArea());
+        System.out.println(String.format("The area of the circle = %f" , circle.getArea()));
+        System.out.println(String.format("The area of the square = %f" , square.getArea()));
     }
 }
