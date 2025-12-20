@@ -1,3 +1,31 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+
+# ===== Java =====
+*.class
+*.jar
+*.war
+*.ear
+
+# ===== Spring / Libraries =====
+libs/
+lib/
+
+# ===== IntelliJ =====
+.idea/
+*.iml
+out/
+
+# ===== Eclipse =====
+.classpath
+.project
+.settings/
+
+# ===== Build tools =====
+target/
+build/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
