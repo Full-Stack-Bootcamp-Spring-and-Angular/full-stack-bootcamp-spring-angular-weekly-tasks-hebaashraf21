@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/Task2.2_DI_with_xml/Task2.2_DI_with_xml.iml" filepath="$PROJECT_DIR$/Task2.2_DI_with_xml/Task2.2_DI_with_xml.iml" />
       <module fileurl="file://$PROJECT_DIR$/Task3.1_bean_scope_types/Task3.1_bean_scope_types.iml" filepath="$PROJECT_DIR$/Task3.1_bean_scope_types/Task3.1_bean_scope_types.iml" />
       <module fileurl="file://$PROJECT_DIR$/Task3.2_bean_lifecycle_init_destroy/Task3.2_bean_lifecycle_init_destroy.iml" filepath="$PROJECT_DIR$/Task3.2_bean_lifecycle_init_destroy/Task3.2_bean_lifecycle_init_destroy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Task4_vehicles_system_jdbc/Task4_vehicles_system_jdbc.iml" filepath="$PROJECT_DIR$/Task4_vehicles_system_jdbc/Task4_vehicles_system_jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/full-stack-bootcamp-spring-angular-weekly-tasks-hebaashraf21.iml" filepath="$PROJECT_DIR$/full-stack-bootcamp-spring-angular-weekly-tasks-hebaashraf21.iml" />
     </modules>
   </component>
