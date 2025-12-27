@@ -2,35 +2,48 @@ package com.vehiclesSystem.controller;
 
 import com.vehiclesSystem.dao.DatabaseOperations;
 import com.vehiclesSystem.models.Plane;
+import com.vehiclesSystem.models.VehicleType;
 import lombok.Setter;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Setter
 @Component
-public class PlaneController {
+public class PlaneController implements VehicleController<Plane> {
 
     private Plane plane;
     private DatabaseOperations databaseOperations;
 
-    public void savePlane(Plane plane) {
+    @Override
+    public void save(Plane plane) {
         plane.setDatabaseOperations(databaseOperations);
         databaseOperations.save(plane);
     }
 
-    public void updatePlane(Plane plane) {
+    @Override
+    public void update(Plane plane) {
         plane.setDatabaseOperations(databaseOperations);
         databaseOperations.update(plane);
     }
 
-    public void deletePlane(int id) {
+    @Override
+    public void delete(int id) {
+
         databaseOperations.delete(id);
     }
 
-    public Plane getPlaneById(int id) {
+    @Override
+    public Plane searchById(int id) {
+
         return (Plane) databaseOperations.searchById(id);
     }
 
-    public void printAllPlanes() {
-        databaseOperations.getAllVehicles().forEach(System.out::println);
+    @Override
+    public List<Plane> getAll() {
+        return databaseOperations.getAllVehicles().stream()
+                .filter(v -> v.getType() == VehicleType.PLANE)
+                .map(v -> (Plane) v).toList();
     }
+
 }

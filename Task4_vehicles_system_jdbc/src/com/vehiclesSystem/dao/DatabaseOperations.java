@@ -1,8 +1,6 @@
 package com.vehiclesSystem.dao;
 
-import com.vehiclesSystem.models.Car;
-import com.vehiclesSystem.models.Vehicle;
-import com.vehiclesSystem.models.VehicleType;
+import com.vehiclesSystem.models.*;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Value;
@@ -102,7 +100,7 @@ public class DatabaseOperations {
             ps.setInt(3, vehicle.getId());
 
             ps.executeUpdate();
-            System.out.println("♻️ Vehicle updated: " + vehicle);
+            System.out.println(" Vehicle updated: " + vehicle);
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -114,11 +112,24 @@ public class DatabaseOperations {
         try (PreparedStatement ps = connection.prepareStatement(sql)) {
             ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
+
             if (rs.next()) {
-                Vehicle vehicle = new Car(this);
+                VehicleType type =
+                        VehicleType.valueOf(rs.getString("type"));
+
+                Vehicle vehicle;
+
+                switch (type) {
+                    case CAR -> vehicle = new Car(this);
+                    case PLANE -> vehicle = new Plane();
+                    case BIKE -> vehicle = new Bike();
+                    default -> throw new IllegalStateException("Unknown type");
+                }
+
                 vehicle.setId(rs.getInt("id"));
                 vehicle.setModel(rs.getString("model"));
-                vehicle.setType(Enum.valueOf(com.vehiclesSystem.models.VehicleType.class, rs.getString("type")));
+                vehicle.setType(type);
+
                 return vehicle;
             }
         } catch (SQLException e) {
@@ -127,16 +138,28 @@ public class DatabaseOperations {
         return null;
     }
 
+
     public List<Vehicle> getAllVehicles() {
         List<Vehicle> vehicles = new ArrayList<>();
         String sql = "SELECT * FROM vehicles";
         try (Statement stmt = connection.createStatement();
              ResultSet rs = stmt.executeQuery(sql)) {
             while (rs.next()) {
-                Vehicle vehicle = new Car(this);
+                VehicleType type =
+                        VehicleType.valueOf(rs.getString("type"));
+
+                Vehicle vehicle;
+
+                switch (type) {
+                    case CAR -> vehicle = new Car(this);
+                    case PLANE -> vehicle = new Plane();
+                    case BIKE -> vehicle = new Bike();
+                    default -> throw new IllegalStateException("Unknown type");
+                }
+
                 vehicle.setId(rs.getInt("id"));
                 vehicle.setModel(rs.getString("model"));
-                vehicle.setType(Enum.valueOf(com.vehiclesSystem.models.VehicleType.class, rs.getString("type")));
+                vehicle.setType(type);
                 vehicles.add(vehicle);
             }
         } catch (SQLException e) {

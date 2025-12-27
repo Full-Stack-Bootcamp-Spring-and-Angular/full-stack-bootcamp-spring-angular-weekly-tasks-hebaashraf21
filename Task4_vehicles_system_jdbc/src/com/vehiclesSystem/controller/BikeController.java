@@ -2,11 +2,14 @@ package com.vehiclesSystem.controller;
 
 import com.vehiclesSystem.dao.DatabaseOperations;
 import com.vehiclesSystem.models.Bike;
+import com.vehiclesSystem.models.VehicleType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
-public class BikeController {
+public class BikeController implements VehicleController<Bike> {
 
     @Autowired
     private Bike bike;
@@ -14,23 +17,32 @@ public class BikeController {
     @Autowired
     private DatabaseOperations databaseOperations;
 
-    public void saveBike(Bike bike) {
+    @Override
+    public void save(Bike bike) {
         databaseOperations.save(bike);
     }
 
-    public void updateBike(Bike bike) {
+    @Override
+    public void update(Bike bike) {
         databaseOperations.update(bike);
     }
 
-    public void deleteBike(int id) {
+    @Override
+    public void delete(int id) {
         databaseOperations.delete(id);
     }
 
-    public Bike getBikeById(int id) {
+    @Override
+    public Bike searchById(int id) {
         return (Bike) databaseOperations.searchById(id);
     }
 
-    public void printAllBikes() {
-        databaseOperations.getAllVehicles().forEach(System.out::println);
+    @Override
+    public List<Bike> getAll()
+    {
+       return databaseOperations.getAllVehicles().stream()
+               .filter(v -> v.getType() == VehicleType.BIKE)
+               .map(v -> (Bike) v)
+               .toList();
     }
 }
