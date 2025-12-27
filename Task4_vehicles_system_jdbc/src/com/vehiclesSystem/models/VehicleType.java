@@ -1,6 +1,6 @@
 package com.vehiclesSystem.models;
 
-public enum Type {
+public enum VehicleType {
     CAR,
     BIKE,
     PLANE

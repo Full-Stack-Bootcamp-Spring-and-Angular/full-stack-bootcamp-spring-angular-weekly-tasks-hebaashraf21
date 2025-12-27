@@ -1,5 +1,8 @@
 package com.vehiclesSystem.config;
 
+import com.vehiclesSystem.controller.BikeController;
+import com.vehiclesSystem.controller.CarController;
+import com.vehiclesSystem.controller.PlaneController;
 import com.vehiclesSystem.dao.DatabaseOperations;
 import com.vehiclesSystem.models.Bike;
 import com.vehiclesSystem.models.Car;
@@ -40,5 +43,23 @@ public class Config {
     public Bike bike()
     {
         return new Bike();
+    }
+
+    @Bean
+    public CarController carController(DatabaseOperations databaseOperations) {
+        return new CarController(databaseOperations);
+    }
+
+    @Bean
+    public PlaneController planeController(Plane plane, DatabaseOperations databaseOperations) {
+        PlaneController controller = new PlaneController();
+        controller.setPlane(plane);
+        controller.setDatabaseOperations(databaseOperations);
+        return controller;
+    }
+
+    @Bean
+    public BikeController bikeController(Bike bike, DatabaseOperations databaseOperations) {
+        return new BikeController();
     }
 }

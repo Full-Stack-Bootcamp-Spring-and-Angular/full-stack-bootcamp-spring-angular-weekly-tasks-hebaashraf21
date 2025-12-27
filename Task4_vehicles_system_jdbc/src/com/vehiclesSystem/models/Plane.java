@@ -3,13 +3,14 @@ package com.vehiclesSystem.models;
 import com.vehiclesSystem.dao.DatabaseOperations;
 import lombok.Setter;
 
-public class Plane {
+@Setter
+public class Plane extends Vehicle {
 
-    int id;
-    String model;
-    Type type;
-
-    @Setter
     DatabaseOperations databaseOperations;
+
+    public Plane()
+    {
+        this.type = VehicleType.PLANE;
+    }
 
 }
