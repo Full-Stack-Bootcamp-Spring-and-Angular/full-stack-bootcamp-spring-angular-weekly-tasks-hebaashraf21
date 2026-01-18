@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="SmartTomcatPro.exploded-war" name="age_calculator:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/age_calculator_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="antlr-2.7.7" />
+          <element id="library" level="project" name="libs" />
+        </element>
+        <element id="directory" name="classes">
+          <element id="module-output" name="Task5.1_spring_mvc_age_calculator" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
