@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/commons-logging-1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/javax.annotation-api-1.3.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/javax.servlet-api-4.0.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/javax.servlet.jsp.jstl-1.2.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/javax.servlet.jsp.jstl-api-1.2.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/lombok.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/mysql-connector.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-aop-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-aspects-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-beans-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-context-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-context-indexer-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-context-support-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-core-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-expression-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-instrument-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-jcl-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-jdbc-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-jms-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-messaging-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-orm-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-oxm-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-r2dbc-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-test-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-tx-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-web-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-webflux-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-webmvc-5.3.9.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-websocket-5.3.9.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-aop-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-aspects-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-beans-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-context-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-context-indexer-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-context-support-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-core-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-expression-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-instrument-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-jcl-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-jdbc-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-jms-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-messaging-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-orm-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-oxm-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-r2dbc-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-test-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-tx-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-web-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-webflux-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-webmvc-5.3.9-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-websocket-5.3.9-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-aop-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-aspects-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-beans-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-context-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-context-indexer-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-context-support-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-core-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-expression-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-instrument-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-jcl-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-jdbc-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-jms-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-messaging-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-orm-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-oxm-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-r2dbc-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-test-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-tx-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-web-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-webflux-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-webmvc-5.3.9-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Spring MVC - Session2 (projects)/AgeCalculatorApp/libs/spring-websocket-5.3.9-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
