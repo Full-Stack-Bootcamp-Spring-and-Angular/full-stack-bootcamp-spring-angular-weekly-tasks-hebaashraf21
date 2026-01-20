@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/Task5.1_spring_mvc_age_calculator/libs" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/Task5.1_spring_mvc_age_calculator/libs" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/Task5.1_spring_mvc_age_calculator/libs" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/Task5.1_spring_mvc_age_calculator/libs" recursive="false" type="SOURCES" />
+  </library>
+</component>

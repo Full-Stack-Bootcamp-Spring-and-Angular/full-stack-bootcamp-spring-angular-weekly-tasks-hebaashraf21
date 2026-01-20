@@ -36,6 +36,8 @@
       <root url="jar://$PROJECT_DIR$/libs/spring-test-5.3.9.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/spring-webflux-5.3.9.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/spring-websocket-5.3.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../lombok.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../mysql-connector-j-9.5.0/mysql-connector-j-9.5.0/mysql-connector-j-9.5.0.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/libs/spring-aop-5.3.9-javadoc.jar!/" />
