@@ -1,11 +1,14 @@
 package myApp.model;
 
+import lombok.ToString;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "products")
+@ToString
 public class Product {
 
     @Id
@@ -26,18 +29,5 @@ public class Product {
 
     @Column(name = "production_date")
     private LocalDate productionDate;
-
-    @Override
-    public String toString() {
-        return "Product{" +
-                "id='" + productId + '\'' +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", price=" + price +
-                ", stockQuantity=" + stockQuantity +
-                ", manufacturer='" + manufacturer + '\'' +
-                ", productionDate=" + productionDate +
-                '}';
-    }
 
 }
