@@ -3,6 +3,7 @@ package myApp.model;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -12,6 +13,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Setter
 @Getter
+@ToString(exclude = "personId")
 public class Passport {
 
     @Id
@@ -31,15 +33,5 @@ public class Passport {
     public Passport(String passportNumber, LocalDate expiryDate) {
         this.passportNumber = passportNumber;
         this.expiryDate = expiryDate;
-    }
-
-    @Override
-    public String toString() {
-        return "Passport{" +
-                "id=" + id +
-                ", passportNumber='" + passportNumber + '\'' +
-                ", expiryDate='" + expiryDate + '\'' +
-                ", personId=" + (personId != null ? personId.getId() : null) +
-                '}';
     }
 }
