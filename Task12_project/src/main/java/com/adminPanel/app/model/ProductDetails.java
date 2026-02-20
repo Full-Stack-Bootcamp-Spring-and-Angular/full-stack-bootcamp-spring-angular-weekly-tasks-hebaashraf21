@@ -1,15 +1,15 @@
 package com.adminPanel.app.model;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
-import java.time.LocalDate;
+import java.util.Date;
 
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
+@ToString(exclude = "product")
 @Entity
 @Table(name = "product_details")
 public class ProductDetails {
@@ -21,7 +21,8 @@ public class ProductDetails {
     private String name;
 
     @Column(name = "expiration_date")
-    private LocalDate expirationDate;
+    @Temporal(TemporalType.DATE)
+    private Date expirationDate;
 
     private String manufacturer;
 
@@ -32,4 +33,13 @@ public class ProductDetails {
     @OneToOne
     @JoinColumn(name = "product_id")
     private Product product;
+
+    public ProductDetails(String name, Date expirationDate, String manufacturer, double price, boolean available) {
+
+        this.name = name;
+        this.expirationDate = expirationDate;
+        this.manufacturer = manufacturer;
+        this.price = price;
+        this.available = available;
+    }
 }

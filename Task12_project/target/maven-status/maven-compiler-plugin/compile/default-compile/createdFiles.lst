@@ -1,0 +1,6 @@
+com\adminPanel\app\dao\ProductDAOImp.class
+com\adminPanel\app\model\Product.class
+com\adminPanel\app\util\HibernateUtil.class
+com\adminPanel\app\Main.class
+com\adminPanel\app\dao\ProductDAO.class
+com\adminPanel\app\model\ProductDetails.class

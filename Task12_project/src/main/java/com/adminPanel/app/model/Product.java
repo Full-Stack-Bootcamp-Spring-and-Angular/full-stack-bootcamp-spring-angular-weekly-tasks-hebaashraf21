@@ -3,15 +3,16 @@ package com.adminPanel.app.model;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
 @Getter
 @Setter
 @NoArgsConstructor
+@Entity
+@Table(name = "product")
+@ToString
 public class Product {
 
     @Id
@@ -20,7 +21,12 @@ public class Product {
 
     private String name;
 
-    @OneToOne(mappedBy = "product")
+    @OneToOne(mappedBy = "product", cascade = CascadeType.ALL)
     private ProductDetails productDetails;
+
+    public Product(String name)
+    {
+        this.name = name;
+    }
 
 }
