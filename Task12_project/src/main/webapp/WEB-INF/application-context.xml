@@ -12,6 +12,7 @@
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 
+
 	<!-- Step 3: Define Spring MVC view resolver -->
 	<bean
 			class="org.springframework.web.servlet.view.InternalResourceViewResolver">
