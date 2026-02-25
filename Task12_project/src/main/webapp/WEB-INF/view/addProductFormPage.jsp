@@ -12,7 +12,7 @@
 <div class="container mt-5">
     <h2>Add New Product</h2>
 
-    <form:form modelAttribute="product" action='/products/save' method="post">
+    <form:form modelAttribute="product" action='/products/save' method="post" enctype="multipart/form-data">
 
 
         <div class="mb-3">
@@ -38,6 +38,11 @@
             <form:label path="productDetails.expirationDate">Expiration Date</form:label>
             <form:input path="productDetails.expirationDate" type="date" cssClass="form-control"/>
             <form:errors path="productDetails.expirationDate" cssClass="text-danger"/>
+        </div>
+
+        <div class="mb-3">
+            <label>Product Image</label>
+            <input type="file" name="imageFile" class="form-control"/>
         </div>
 
         <div class="mb-3 form-check">

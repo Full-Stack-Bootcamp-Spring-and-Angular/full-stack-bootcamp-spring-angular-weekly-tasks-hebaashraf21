@@ -10,7 +10,7 @@
 <body>
 <div class="container mt-5">
     <h2>Update Product</h2>
-    <form:form modelAttribute="product" action='/products/update' method="post">
+    <form:form modelAttribute="product" action='/products/update' method="post" enctype="multipart/form-data">
         <div class="mb-3">
             <form:label path="id">Product ID</form:label>
             <form:input path="id" cssClass="form-control bg-light text-muted" readonly="true"/>
@@ -43,6 +43,11 @@
                     <form:checkbox path="productDetails.available" cssClass="form-check-input"/>
                     <form:label path="productDetails.available" cssClass="form-check-label">Available</form:label>
                 </div>
+
+                 <div class="mb-3">
+                     <label>Product Image</label>
+                     <input type="file" name="imageFile" class="form-control"/>
+                 </div>
         <button type="submit" class="btn btn-primary">Update</button>
     </form:form>
 </div>
