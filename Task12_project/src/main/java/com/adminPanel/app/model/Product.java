@@ -26,6 +26,9 @@ public class Product {
     @Size(min = 3, message = "Product name must be at least 3 characters")
     private String name;
 
+    @Column(name = "image_path")
+    private String imagePath;
+
     @OneToOne(mappedBy = "product", cascade = CascadeType.ALL)
     @Valid
     @NotNull(message = "Product details are required")

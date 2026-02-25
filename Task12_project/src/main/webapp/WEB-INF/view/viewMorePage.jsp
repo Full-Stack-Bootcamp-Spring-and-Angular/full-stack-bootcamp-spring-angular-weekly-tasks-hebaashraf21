@@ -20,6 +20,12 @@
             <td>${product.name}</td>
         </tr>
         <tr>
+            <th>Image</th>
+            <td>
+                <img src="${pageContext.request.contextPath}/${product.imagePath}" width="80" height="80"/>
+            </td>
+        </tr>
+        <tr>
             <th>Price</th>
             <td>${product.productDetails.price}</td>
         </tr>

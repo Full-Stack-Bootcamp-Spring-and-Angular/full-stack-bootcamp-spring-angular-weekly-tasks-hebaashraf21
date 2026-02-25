@@ -10,8 +10,11 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
+import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -54,13 +57,19 @@ public class ProductController {
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public String saveProduct(
             @Valid @ModelAttribute("product") Product product,
-            BindingResult result) {
+            BindingResult result, @RequestParam("imageFile") MultipartFile file) throws IOException {
 
         if (result.hasErrors()) {
             return "addProductFormPage";
         }
         if (product.getProductDetails() != null) {
             product.getProductDetails().setProduct(product);
+        }
+        if (!file.isEmpty()) {
+            String uploadDir = "C:/uploads/";
+            String fileName = file.getOriginalFilename();
+            file.transferTo(new File(uploadDir + fileName));
+            product.setImagePath("uploads/" + fileName);
         }
         productService.save(product);
 
@@ -83,13 +92,19 @@ public class ProductController {
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     public String updateProduct(
             @Valid @ModelAttribute("product") Product product,
-            BindingResult result) {
+            BindingResult result, @RequestParam("imageFile") MultipartFile file) throws IOException {
 
         if (result.hasErrors()) {
             return "updateProductDetails";
         }
         if (product.getProductDetails() != null) {
             product.getProductDetails().setProduct(product);
+        }
+        if (!file.isEmpty()) {
+            String uploadDir = "C:/uploads/";
+            String fileName = file.getOriginalFilename();
+            file.transferTo(new File(uploadDir + fileName));
+            product.setImagePath("uploads/" + fileName);
         }
         productService.update(product);
 
